@@ -44,8 +44,7 @@ namespace thakkar_Assign6
         private void StackedBarChart_Button_Click(object sender, EventArgs e)
         {
             GetNewForm(sender, e);
-
-            //Added Stacked Bar Chart
+            
             Chart stackedBarChart = new Chart();
             stackedBarChart.Name = "stackedBarChart";
             stackedBarChart.Top = 100;
@@ -102,11 +101,11 @@ namespace thakkar_Assign6
             this.Hide();
         }
 
+        /******************    Bubble Chart   *****************/
         private void BubbleChart_Button_Click(object sender, EventArgs e)
         {
             GetNewForm(sender, e);
-
-            //Added Stacked Bar Chart
+            
             Chart bubbleChart = new Chart();
             bubbleChart.Name = "BubbleChart";
             bubbleChart.Top = 100;
@@ -149,11 +148,11 @@ namespace thakkar_Assign6
             this.Hide();
         }
 
+        /******************    Pie Chart   *****************/
         private void PieChart_Button_Click(object sender, EventArgs e)
         {
             GetNewForm(sender, e);
-
-            //Added Stacked Bar Chart
+            
             Chart pieChart = new Chart();
             pieChart.Name = "PieChart";
             pieChart.Top = 100;
@@ -184,10 +183,7 @@ namespace thakkar_Assign6
                 while (line != null)
                 {
                     String[] tokens = line.Split(',');
-
                     pieChart.Series[0].Points.AddXY(tokens[0], tokens[1]);
-
-
                     line = sr.ReadLine();
                 }
             }
@@ -197,12 +193,12 @@ namespace thakkar_Assign6
             this.Hide();
 
         }
-
+        
+        /******************    Line Chart   *****************/
         private void LineChart_Button_Click(object sender, EventArgs e)
         {
             GetNewForm(sender, e);
-
-            //Added Stacked Bar Chart
+            
             Chart lineChart = new Chart();
             lineChart.Name = "lineChart";
             lineChart.Top = 100;
